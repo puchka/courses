@@ -225,3 +225,18 @@ $$
 We can conclude that $(A ~nand~ (A ~nand~ A)) ~nand~ (A ~nand~ (A
 ~nand~ A))$ is an expression that is always ~false~ regardless of the
 truth value of $A$.
+
+## Problem 4. [10 points]
+
+You have 12 coins and a balance scale, one of which is fake. All
+the real coins weigh the same, but the fake coin weighs less than the rest. All the coins
+visually appear the same, and the difference in weight is imperceptible to your senses. In at
+most 3 weighings, give a strategy that detects the fake coin. (Note: the scale in this problem
+is a scale with two dishes, which tips toward the side that is heavier. For clarification, do an
+image search for “balance scale”).
+
+1) Devide the coins in 2 sets of 6 coins each, the fake coin will be among the ones that are up.
+2) Devide those in 2 sets of 3 coins each, the fake coin will be among those which are collectively lighter.
+3) Among the remaining 3, pick two and compare their weight.
+   - If they are the same weight, the one you didn't pick is the fake one.
+   - Otherwhise, if one of them is lighter, it's the fake coin.
