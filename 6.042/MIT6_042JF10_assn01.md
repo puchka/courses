@@ -240,3 +240,21 @@ image search for “balance scale”).
 3) Among the remaining 3, pick two and compare their weight.
    - If they are the same weight, the one you didn't pick is the fake one.
    - Otherwise, if one of them is lighter, it's the fake coin.
+
+## Problem 5. [6 points]
+
+Prove the following statement by proving its contrapositive: if $r$ is
+irrational, then $r^{1/5}$ is irrational. (Be sure to state the contrapositive explicitly.)
+
+The contrapositive of this statement is:
+
+If $r^{1/5}$ is rational, then $r$ is rational.
+
+$$
+r^{1/5} is~rational \iff \exists a, b \in \mathbb{N}.~ r^{1/5} = \frac{a}{b}~where~\frac{a}{b}~is~in~lowest~term
+\iff r = \frac{a^5}{b^5}
+$$
+
+We can note that $\frac{a^5}{b^5}$ is a fraction in lowest term.
+
+We can conclude that $r$ is rational. $\square$
